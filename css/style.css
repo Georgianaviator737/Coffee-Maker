@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background-color: rgb(83, 33, 0);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+img {
+    filter: brightness(3) invert(.75);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.delete-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    position: relative;
+}
+
+#icon-div {
+    position: relative;
+    overflow-y: scroll;
+    height: 512px;
+    width: 350px;
+    border: 5px solid black;
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(/img/coffee-beans.png);
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(102, 41, 6);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(236, 171, 148);
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px black;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px black;
+    border-radius: 10px;
+}
+
+button, select, input {
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(236, 171, 148);
+    transition: .5s all;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+}
+
+button:hover {
+    background: rgb(83, 33, 0);
+    border: 1px solid rgb(236, 171, 148);
+    color: rgb(236, 171, 148);
+}
+
+option {
+    background-color: rgb(236, 171, 148);
+    text-align: center;
+}
+
+.prices {
+    margin-top: 20px;
+    font-size: 2rem;
+    border: 2px solid rgb(236, 171, 148);
+    border-radius: 50px;
+    color: rgb(236, 171, 148);
+    padding: 15px;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: rgb(236, 171, 148);
+    padding: 15px;
+}

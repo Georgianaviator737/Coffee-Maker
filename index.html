@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Maker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <input type="number" id="americanoInput" placeholder="Enter quantity">
+            <button id="americanoBtn">Americano</button>
+            <img src="/img/americano.png" alt="Americano Cup">
+            <div class="prices">
+                <h1>Price: 7 $</h1>
+                <h1>Discounted Price: 5 $</h1>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="icon-container">
+                <div id="icon-div"></div>
+            </div>
+            <div class="delete-container">
+                <select id="coffee-type">
+                    <option value="1">Americano</option>
+                    <option value="2">Latte</option>
+                </select>
+                <input type="number" id="removeInput" placeholder="Enter quantity">
+                <button id="removeBtn">Remove</button>
+            </div>
+            <h1 id="totalPrice">0 $</h1>
+            <div id="discountMessage"></div>
+        </div>
+
+        <div class="container">
+            <input type="number" id="latteInput" placeholder="Enter quantity">
+            <button id="latteBtn">Latte</button>
+            <img src="/img/latte.png" alt="Latte Cup">
+            <div class="prices">
+            <h1>Price: 5 $</h1>
+            <h1>Discounted Price: 3 $</h1>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
